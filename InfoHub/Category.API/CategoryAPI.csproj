@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Program.cs~RF108e1e7f.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Carter" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildingBlocks\BuildingBlocks.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Architecture\GetProductByCategoryName\BusinessLogic\" />
+    <Folder Include="Architecture\GetProductByCategoryName\EndPoint\" />
+  </ItemGroup>
+
+</Project>
